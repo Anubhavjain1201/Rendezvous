@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.rendezvous.fragments.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.rendezvous.fragments.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_rendezvousFragment"
+            app:destination="@id/rendezvousFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/rendezvousFragment"
+        android:name="com.example.rendezvous.fragments.RendezvousFragment"
+        android:label="RendezvousFragment" >
+        <action
+            android:id="@+id/action_rendezvousFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/rendezvousFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_rendezvousFragment_to_outgoingMeetingFragment"
+            app:destination="@id/outgoingMeetingFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/outgoingMeetingFragment"
+        android:name="com.example.rendezvous.fragments.OutgoingMeetingFragment"
+        android:label="OutgoingMeetingFragment" >
+        <argument
+            android:name="user"
+            app:argType="com.example.rendezvous.models.User" />
+        <argument
+            android:name="callType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_outgoingMeetingFragment_to_rendezvousFragment"
+            app:destination="@id/rendezvousFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"
+            app:popUpTo="@id/rendezvousFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+
+</navigation>

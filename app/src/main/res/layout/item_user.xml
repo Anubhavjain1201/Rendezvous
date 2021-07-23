@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/user_first_char"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:background="@drawable/background_user_icon"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:text="A"
+
+                app:layout_constraintBottom_toBottomOf="@id/user_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                 />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/user_first_char"
+                app:layout_constraintEnd_toStartOf="@id/icon_audio"
+                app:layout_constraintStart_toEndOf="@id/user_first_char"
+                app:layout_constraintTop_toTopOf="@id/icon_video"
+                tools:text="Anubhav Jain" />
+
+            <ImageView
+                android:id="@+id/icon_audio"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/audioimage"
+                android:src="@drawable/ic_audio"
+
+                app:layout_constraintEnd_toStartOf="@id/icon_video"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/icon_video"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+
+                android:contentDescription="@string/videoimage"
+                android:src="@drawable/ic_video"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Rendezvous</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_room_name">Enter Room Name</string>
+    <string name="join">Join</string>
+    <string name="welcome_to_rendezvous">Welcome to <br>RendeZvous</br></string>
+    <string name="signin_signup">SignIn / SignUp</string>
+    <string name="logout">Logout</string>
+    <string name="videoimage">videoImage</string>
+    <string name="audioimage">audioImage</string>
+    <string name="incoming_meeting_invitation">Incoming Meeting Invitation</string>
+    <string name="outgoing_meeting_invitation">Sending Meeting Invitation</string>
+    <string name="invitation_accepted">Invitation Accepted</string>
+    <string name="invitation_rejected">Invitation Rejected</string>
+    <string name="invitation_cancelled">Invitation Cancelled</string>
+    <string name="warning">Warning</string>
+    <string name="disable">Disable</string>
+    <string name="cancel">Cancel</string>
+    <string name="text_battery_optimisation">Battery Optimization is enabled. This can interrupt running Background Services and you may not receive calls.</string>
+</resources>

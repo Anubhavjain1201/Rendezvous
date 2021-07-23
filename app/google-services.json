@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "298912784398",
+    "project_id": "rendezvous-3be05",
+    "storage_bucket": "rendezvous-3be05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298912784398:android:dce76be6b34bd59604dc5f",
+        "android_client_info": {
+          "package_name": "com.example.rendezvous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298912784398-gpaed0sahh225v2ijb95jrgfsi5cf2tj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rendezvous",
+            "certificate_hash": "fbdfa8f91b84b1643bbf32f23910b475f4babe54"
+          }
+        },
+        {
+          "client_id": "298912784398-tich21i09grfpi3jek3q3lhj7vkpjalq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjtuVrB1NtOZlz41BoQFlKTdOvPeosLWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298912784398-tich21i09grfpi3jek3q3lhj7vkpjalq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
